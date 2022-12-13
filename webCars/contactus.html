@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Pagina web creada por MKK" />
+        <link rel="stylesheet" href="contactestilo.css" />
+        <script src="scriptarticle.js" defer></script>
+        <title>Public News</title>
+
+        <style>
+            @media screen and (max-width: 1240px){
+                main{
+                    width: 90%;
+                }
+            }
+            @media screen and (max-width: 1200px) {
+                header{
+                    padding-bottom: 2px;
+                    position: unset;
+                }
+                header>div:first-child{
+                    text-align: center;
+                }
+                header>div:first-child>a>p{
+                    display: block;
+                }
+                header > #menu{
+                    display: block;
+                }
+                header nav{
+                    display: none;
+                    position: relative;
+                    width: 80%;
+                    text-align: center;
+                    padding-left: 2%;
+                    font-size: 1.2em;
+                }
+                nav a{
+                    display:block;
+                    text-decoration: none;
+                    text-align: center;
+                    padding: 10px;
+                    color: rgba(255,255,255,0.75);
+                    border-bottom: 1px solid rgba(255,255,255,0.2);
+                }
+                
+                nav a:hover{
+                    color: rgba(255,255,255,1);
+                    border-bottom-color:rgba(255,255,255,0.4);
+                }
+                nav ul li{
+                    width: 100%;
+                }
+            }
+
+            @media screen and (max-width: 510px) {
+                main .distribucion1{
+                    margin-right: 0;
+                }
+                footer > div:nth-child(2){
+                    margin-right: 0;
+                }
+            }
+
+            @media screen and (max-width: 405px) {
+                header div a h1{
+                    font-size: 26vw;
+                }
+                section.distribucion1, section.distribucion2{
+                    min-width: 180px;
+                }
+                footer > div:nth-child(2), footer > div:nth-child(3){
+                    margin: auto;
+                    text-align: center;
+                }
+                footer > div:nth-child(2) > span, footer > div:nth-child(3) > span{
+                    margin: auto;
+                }
+            }
+            
+        </style>
+
+        
+        
+    </head>
+
+    <body>
+        <span>
+            <div>
+                <a href="">
+                    VIEW ALL DEMOS
+                </a>
+            </div>
+
+            <div>
+                <a href="">
+                    GET THIS DEMO
+                </a>
+            </div>
+        </span>
+        <!-- ---------------------------------------------------------------------------- -->
+                                            <!-- HEADER -->
+        <!-- ---------------------------------------------------------------------------- -->
+        <header>
+            <div>Latest: <a href="article.html"><p id="latest"></p></a></div>
+            <div><a href="index.html"><h1>Public News</h1></a></div>
+            <a href="#" id="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <nav id="men">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="buyerguide.html"> BUYER'S GUIDE</a></li>
+                    <li><a href="cartech.html">CARTECH</a></li>
+                    <li><a href="autoshows.html">AUTO SHOWS</a></li>
+                    <li class="selected"><a href="contactus.html">CONTACT US</a></li>
+                </ul>
+                <figure id="lupa">
+                    <img src="img/lupa.png" alt="lupa" />   
+                </figure>
+                <br />
+                <span id="search">
+                    <input type="text" />
+                    <button type="submit">Buscar</button>
+                </span>
+               
+
+            </nav>
+        </header>
+        <!-- ---------------------------------------------------------------------------- -->
+                                            <!-- MAIN -->
+        <!-- ---------------------------------------------------------------------------- -->
+
+        <main>
+            <section class="distribucion1">
+                <div class="encabezado"><h3>Contact Form</h3></div>
+                <form id="form" method="POST">
+                    <label>Name*</label>
+                    <br/><br/>
+                    <input id="nombre" type="text" required/>
+                    <br /><br/>
+                    <label>Email*</label>
+                    <br/><br/>
+                    <input type="text" required/>
+                    <br /><br/>
+                    <label>Subject*</label>
+                    <br/><br/>
+                    <input type="text" required/>
+                    <br /><br/>
+                    <label>Message</label>
+                    <br/><br/>
+                    <textarea rows="6"></textarea>
+                    <br/><br/>
+                    <button id="submitbutton" type="submit">Submit</button>
+                </form>
+            </section>
+            <section class="distribucion2">
+                <article>
+                    <div class="encabezado"><h3>Most Popular News</h3></div>
+                    
+                    <div class="show">
+                        <figure>
+                            <img src="img/shownaranja.jpeg" alt="naranja" />
+                        </figure>
+                        <div class="showtitle">
+                            <h3><a href="article.html">Top Gears Race to the North Pole Great Moments</a></h3>
+                            
+                            <h4><a href="article.html">January 8, 2020</a></h4>
+                        </div>
+                        
+                    </div>
+                    <div class="show">
+                        <figure>
+                            <img src="img/showazulfuerte.jpeg" alt="azulfuerte" />
+                        </figure>
+                        <div class="showtitle">
+                            <h3><a href="article.html">The Amazing History Of Ford’s Greatest Supercar</a></h3>
+                        
+                            <h4><a href="article.html">January 8, 2020</a></h4>
+                        </div>
+                        
+                    </div>
+                    <div class="show">
+                        <figure>
+                            <img src="img/showazulclaro.jpeg" alt="azulclaro" />
+                        </figure>
+                        <div class="showtitle">
+                            <h3><a href="article.html">Fastest lap by Top Gear’s new host Matt George</a></h3>
+                        
+                            <h4><a href="article.html">December 31, 2019</a></h4>
+                        </div>
+                        
+                    </div>
+
+                </article>
+            </section>
+        </main>
+
+                <!-- ---------------------------------------------------------------------------- -->
+                                            <!-- FOOTER -->
+        <!-- ---------------------------------------------------------------------------- -->
+
+        <footer>
+            <div>
+                <h3>Public News</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmodb tempor incididunt ut labore et dolore magna aliqua
+                    <br><br>
+                    Phone : (977) 9876543210
+                    Email : wordpress@demo.themegrill.com
+                    Website : www.themegrill.com
+                </p>
+            </div>
+
+            <div>
+                <h4>Editor Picks</h4>
+                <span></span>
+                <div class="show">
+                    <figure>
+                        <img src="img/shownaranja.jpeg" alt="naranja" />
+                    </figure>
+                    <div class="showtitle">
+                        <h3><a href="">Top Gears Race to the North Pole Great Moments</a></h3>
+                        <br />
+                        <h4><a href="">January 8, 2020</a></h4>
+                    </div>
+                </div>
+                <hr>
+                <div class="show">
+                    <figure>
+                        <img src="img/mercedesnaranja80s.jpg" alt="naranja" />
+                    </figure>
+                    <div class="showtitle">
+                        <h3><a href="article.html">Top Gears Race to the North Pole Great Moments</a></h3>
+                        <br />
+                        <h4><a href="article.html">January 8, 2020</a></h4>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h4>Latest News</h4>
+                <span></span>
+                <div class="show">
+                    <figure>
+                        <img src="img/showazulclaro.jpeg" alt="naranja" />
+                    </figure>
+                    <div class="showtitle">
+                        <h3><a href="article.html">Top Gears Race to the North Pole Great Moments</a></h3>
+                        <br />
+                        <h4><a href="article.html">January 8, 2020</a></h4>
+                    </div>
+                </div>
+                <hr>
+                <div class="show">
+                    <figure>
+                        <img src="img/showazulfuerte.jpeg" alt="naranja" />
+                    </figure>
+                    <div class="showtitle">
+                        <h3><a href="article.html">Top Gears Race to the North Pole Great Moments</a></h3>
+                        <br />
+                        <h4><a href="article.html">January 8, 2020</a></h4>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div id="copiright">
+            <p>Copyright © 2021 ColorMag Pro Public News. All rights reserved.
+                <br><br>
+                Theme: ColorMag Pro by ThemeGrill. Powered by WordPress.</p>
+        </div>
+    </body>
+</html>

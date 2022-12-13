@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=PT+Serif+Caption&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+p{
+    text-align: center;
+    color: rgb(167, 167, 167);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-color: rgba(233, 233, 233, 0.384);
+}
+
+/* ------------------- HEADER ----------------- */
+header{
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(128, 128, 128, 0.26);
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+/* -------- LOGO -------- */
+#logo{
+    width: 100%;
+    min-width: 150px;
+}
+header>a{
+    width: 10%;
+    min-width: 150px;
+    display: inline-block;
+    vertical-align: middle;
+}
+/* -------- NAV -------- */
+ul{
+    display: inline-flex;
+    flex: wrap;
+    width: 40%;
+    vertical-align: middle;
+}
+header>ul li{
+    margin: auto;
+    list-style: none;
+    min-width: 120px;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "segoe ui", Roboto, Helvetica, Arial, sans-serif;;
+}
+/* -------- SEARCH -------- */
+header>input{
+    width: 24%;
+    min-width: 150px;
+    display: inline-block;
+    padding: 4px;
+    border: 1px solid rgba(150, 150, 150, 0.171);
+}input{
+    border: none;
+    background-color: rgba(231, 231, 231, 0.808);
+    border-radius: 6px;
+    text-align: center;
+    padding: 2%;
+    vertical-align: middle;
+    font-size: 1.4em;
+}
+header>input::placeholder{
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "segoe ui", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+/* -------- SLIDER -------- */
+label{
+    display: inline-block;
+    font-size: 1.5vw;
+    margin: 2%;
+    color: rgb(43, 42, 42);
+    min-width: 220px;
+    background-color: rgba(255, 255, 255, 0.637);
+    border-radius: 10px;
+}
+/* The switch - the box around the slider */
+.switch {
+    width: 10%;
+    position: relative;
+    display: inline-block;
+    min-width: 80px;
+    vertical-align: middle;
+    height: 34px;
+    background-color: unset;
+}
+
+    /* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+    width: 60px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* -------- DISPALY ON MOBILE -------- */
+#menu{
+    vertical-align: middle;
+    display: none;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: 4%;
+    top: 29px;
+}
+#menu>div{
+    background-color: unset;
+}
+#menu hr{
+    background-color: #000;
+    border-style: unset;
+    height: 4px;
+    margin: 14% 0 ;
+}
+#nav{
+    display: none;
+}
+#nav>li{
+    padding: 2%;
+
+}
+#nav hr{
+    border: 0.2px solid rgba(128, 128, 128, 0.26);
+}
+
+#nav>li:hover{
+    background-color: rgba(128, 128, 128, 0.116);
+}
+#nav>li:first-of-type{
+    display: flex;
+    justify-content: flex-end;
+    box-shadow:  0px 4px 4px rgba(128, 128, 128, 0.26);
+    
+}
+#nav>li:first-of-type:hover{
+    background-color: unset;
+}
+#searchoculto{
+    flex: 10;
+    display: inline-block;
+    margin: auto;
+    max-width: 300px;
+}
+#switchoculto{
+    display: inline-block;
+}
+
+@keyframes navanimation{
+    0% {top: -50px; }
+    100% {top: 0;}
+}
+
+
+/* ------------------- CUERPO ----------------- */
+
+
+/* -------- BOX1 -------- */
+h1{
+    display: block;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 6vh;
+    font-weight: 500;
+    color: rgb(70, 70, 70);
+}
+#box1{
+    padding: auto;
+    background-color: unset;
+    background-color: rgba(233, 233, 233, 0.384);
+    margin: 0;
+    padding: 0 0 2%;
+    border-radius: 0;
+}
+/* -------- SECTION -------- */
+section{
+    min-height: 100vh;
+    margin-bottom: 50px;
+    background: linear-gradient(0deg, rgba(211,215,228,0.013064600840336116) 0%, rgba(121,211,217,0.4500393907563025) 29%, rgba(160, 247, 134, 0.438) 100%);
+}
+section>h1{
+    font-size: 60px;
+    font-family: 'pt serif caption';
+    color: rgb(17, 17, 17);
+    text-shadow:  0px 10px 9px rgb(89, 95, 89);
+}
+section>h2{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: rgb(99, 99, 99);
+    margin-bottom: 30px;
+    text-decoration: underline 1px;
+    text-underline-offset: 2px;
+}
+#cohete{
+    width: 40%;
+    min-width: 400px;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 50vh;
+    right: 100vw;
+    z-index: -1;
+
+    animation: slide 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+@keyframes slide {
+    to {
+      right: 10vw;
+      overflow: hidden;
+    }
+}
+
+#logo1, #logo{
+    max-width: 80%;
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+    animation: rotate 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+@keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+}
+#nube{
+    width: 40%;
+    position: absolute;
+    overflow: hidden;
+    right: 0%;
+    z-index: 0;
+    animation: slide 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+#nube1{
+    width: 40%;
+    position: absolute;
+    overflow: hidden;
+    left: 20px;
+    z-index: 0;
+    animation: slide 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+section>p{
+    width: 50%;
+    margin: auto;
+    padding: 25px;
+    text-align: justify;
+    position: relative;
+    z-index: 2;
+    line-height: 25px;
+    color: rgba(34, 33, 33, 0.815);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.432);
+    box-shadow: 0px 4px 12px 8px  rgba(235, 230, 230, 0.733);
+    background-color: rgba(247, 247, 247, 0.418);
+}
+
+/* -------- BOX11 -------- */
+
+#box11{
+    display: flex;
+    min-height: 400px;
+    flex-wrap: wrap;
+    padding: auto;
+    background-color: unset;
+    margin: 0 0 2% 0;
+    padding: 0 6% 2%;
+}
+#box11>div{
+    background-color: #fff;
+    display: inline-block;
+    flex: 1;
+    border: 1px solid rgba(148, 148, 148, 0.226);
+    margin: 2px;
+    padding: 10px;
+    min-width: 200px;
+    max-width: 300px;
+}
+#box1>div p{
+    color: rgba(0, 0, 0, 0.849);
+}
+
+.prev{
+    background-color: unset;
+    border: 1px solid rgba(128, 128, 128, 0.219);
+    min-width: 200px;
+    height: 200px;
+    margin: 0;
+    background-image: url(img/Capturainteres.png);
+    background-position: center;
+    background-size: cover;
+}
+#cap2{
+    background-image: url('img/Capturadividendos.png') ;
+}
+#cap3{
+    background-image: url('img/Capturacryptos.png');
+}
+
+.prev:hover{
+    transition: 1s;
+    transform: scale(1.1) rotate(2deg);
+}
+
+div{
+    background-color: #0000004d;
+    border-radius: 12px;
+    margin: 2% auto;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+h3{
+    font-size: 2.2vw;
+    color: rgb(0, 0, 0);
+    background-color: rgba(250, 250, 250, 0.548);
+    border-radius: 10px;
+}
+
+/* button{
+    width: 20%;
+    min-width: 70px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(34, 33, 33, 0.815);
+    color: rgba(204, 203, 201, 0.699);
+    font-size: 1vw;
+    padding: 2%;
+    margin: 2%;
+}
+button:hover{
+    background-color: rgba(0, 0, 0, 0.555);
+} */
+
+
+/* -------------------- FOOTER ------------------- */
+footer{
+    min-height: 10vh;
+    padding-top: 20px;
+    background-color: #fff;
+    box-shadow: 0px -4px 4px rgba(128, 128, 128, 0.26);
+}
+footer>a{
+    display: inline-block;
+    width: 45%;
+    text-align: center;
+    vertical-align: middle;
+}
+footer>a>img{
+    display: inline-block;
+    width: 60%;
+}
+footer>ul{
+    display: inline-block;
+    flex: wrap;
+    width: 50%;
+    text-align: left;
+    margin-bottom: 30px;
+}
+footer>ul li{
+    margin: auto;
+    list-style: none;
+    min-width: 120px;
+    line-height: 30px;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "segoe ui", Roboto, Helvetica, Arial, sans-serif;;
+}
+
+
+

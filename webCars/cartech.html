@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Pagina web creada por MKK" />
+        <link rel="stylesheet" href="estilos1.css" />
+        <script src="scriptarticle.js" defer></script>
+        <title>Public News</title>
+
+        <style>
+            @media screen and (max-width: 1310px){
+                
+                main{
+                    width: 90%;
+                }
+            }
+            @media screen and (max-width: 1180px) {
+                header{
+                    padding-bottom: 2px;
+                    position: unset;
+                }
+                header>div:first-child{
+                    text-align: center;
+                }
+                header>div:first-child>a>p{
+                    display: block;
+                }
+                header > #menu{
+                    display: block;
+                }
+                header nav{
+                    display: none;
+                    position: relative;
+                    width: 80%;
+                    text-align: center;
+                    padding-left: 2%;
+                    font-size: 1.2em;
+                }
+                nav a{
+                    display:block;
+                    text-decoration: none;
+                    text-align: center;
+                    padding: 10px;
+                    color: rgba(255,255,255,0.75);
+                    border-bottom: 1px solid rgba(255,255,255,0.2);
+                }
+                
+                nav a:hover{
+                    color: rgba(255,255,255,1);
+                    border-bottom-color:rgba(255,255,255,0.4);
+                }
+                nav ul li{
+                    width: 100%;
+                }
+                section:first-of-type article{
+                    margin-top: 40px;
+                }
+                .ads{
+                    display: none;
+                }
+            }
+
+            @media screen and (max-width: 680px){
+                section:nth-of-type(2){
+                    min-width: 300px;
+                }
+                section.distribucion2 > article > figure:nth-child(1){
+                    height: 200px;
+                }
+                section.distribucion2 > article > #next{
+                    margin-left: 0;
+                    height: 200px;
+                }
+            }
+
+            @media screen and (max-width: 510px) {
+                footer > div:nth-child(2){
+                    margin-right: 0;
+                }
+            }
+
+            @media screen and (max-width: 405px) {
+                
+                header div a h1{
+                    font-size: 26vw;
+                }
+                section.distribucion1, section.distribucion2{
+                    min-width: 180px;
+                }
+                section.distribucion2 > article > figure:nth-child(1) > div, #next div{
+                    width: 95%;
+                }
+                #next{
+                    margin-bottom: 40px;
+                    min-width: 180px;
+                }
+                
+                footer > div:nth-child(2), footer > div:nth-child(3){
+                    margin: auto;
+                    text-align: center;
+                }
+                footer > div:nth-child(2) > span, footer > div:nth-child(3) > span{
+                    margin: auto;
+                }
+            }
+        </style>
+
+
+    </head>
+
+    <body>
+        <span>
+            <div>
+                <a href="">
+                    VIEW ALL DEMOS
+                </a>
+            </div>
+
+            <div>
+                <a href="">
+                    GET THIS DEMO
+                </a>
+            </div>
+        </span>
+        <!-- ---------------------------------------------------------------------------- -->
+                                            <!-- HEADER -->
+        <!-- ---------------------------------------------------------------------------- -->
+        <header>
+            <div>Latest: <a href="article.html"><p id="latest"></p></a></div>
+            <div><a href="index.html"><h1>Public News</h1></a></div>
+            <a href="#" id="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <nav id="men">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="buyerguide.html"> BUYER'S GUIDE</a></li>
+                    <li class="selected"><a href="cartech.html">CARTECH</a></li>
+                    <li><a href="autoshows.html">AUTO SHOWS</a></li>
+                    <li><a href="contactus.html">CONTACT US</a></li>
+                </ul>
+                <figure id="lupa">
+                    <img src="img/lupa.png" alt="lupa" />   
+                </figure>
+                <br />
+                <span id="search">
+                    <input type="text" />
+                    <button type="submit">Buscar</button>
+                </span>
+               
+
+            </nav>
+        </header>
+        <!-- ---------------------------------------------------------------------------- -->
+                                            <!-- MAIN -->
+        <!-- ---------------------------------------------------------------------------- -->
+        <main>
+            <section class="distribucion1">
+                <article>
+                    <div class="encabezado"><h3>Most Popular News</h3></div>
+                    
+                    <div class="show">
+                        <figure>
+                            <img src="img/shownaranja.jpeg" alt="naranja" />
+                        </figure>
+                        <div class="showtitle">
+                            <h3><a href="article.html">Top Gears Race to the North Pole Great Moments</a></h3>
+                            
+                            <h4><a href="article.html">January 8, 2020</a></h4>
+                        </div>
+                        
+                    </div>
+                    <div class="show">
+                        <figure>
+                            <img src="img/showazulfuerte.jpeg" alt="azulfuerte" />
+                        </figure>
+                        <div class="showtitle">
+                            <h3><a href="article.html">The Amazing History Of Ford’s Greatest Supercar</a></h3>
+                        
+                            <h4><a href="article.html">January 8, 2020</a></h4>
+                        </div>
+                        
+                    </div>
+                    <div class="show">
+                        <figure>
+                            <img src="img/showazulclaro.jpeg" alt="azulclaro" />
+                        </figure>
+                        <div class="showtitle">
+                            <h3><a href="article.html">Fastest lap by Top Gear’s new host Matt George</a></h3>
+                        
+                            <h4><a href="article.html">December 31, 2019</a></h4>
+                        </div>
+                        
+                    </div>
+                    <div class="show">
+                        <figure>
+                            <img src="img/showmercedes.jpeg" alt="mercedes" />
+                        </figure>
+                        <div class="showtitle">
+                            <h3><a href="article.html">Most Popular Cars You Never Have Seen</a></h3>
+                            
+                            <h4><a href="article.html">December 31, 2019</a></h4>
+                        </div>
+                    </div>
+                </article>
+
+                <figure class="ads">
+                    <img src="img/ads.jpeg" alt="anuncio" />
+                </figure>
+
+
+                <article>
+                    <div class="encabezado"><h3>Featured News</h3></div>
+                    
+                    <div class="show">
+                        <figure>
+                            <img src="img/shownaranja.jpeg" alt="naranja" />
+                        </figure>
+                        <div class="showtitle">
+                            <h3><a href="article.html">Top Gears Race to the North Pole Great Moments</a></h3>
+                            
+                            <h4><a href="article.html">January 8, 2020</a></h4>
+                        </div>
+                        
+                    </div>
+                    <div class="show">
+                        <figure>
+                            <img src="img/showazulfuerte.jpeg" alt="azulfuerte" />
+                        </figure>
+                        <div class="showtitle">
+                            <h3><a href="article.html">The Amazing History Of Ford’s Greatest Supercar</a></h3>
+                        
+                            <h4><a href="article.html">January 8, 2020</a></h4>
+                        </div>
+                        
+                    </div>
+                    <div class="show">
+                        <figure>
+                            <img src="img/showazulclaro.jpeg" alt="azulclaro" />
+                        </figure>
+                        <div class="showtitle">
+                            <h3><a href="article.html">Fastest lap by Top Gear’s new host Matt George</a></h3>
+                        
+                            <h4><a href="article.html">December 31, 2019</a></h4>
+                        </div>
+                        
+                    </div>
+                    <div class="show">
+                        <figure>
+                            <img src="img/showmercedes.jpeg" alt="mercedes" />
+                        </figure>
+                        <div class="showtitle">
+                            <h3><a href="article.html">Most Popular Cars You Never Have Seen</a></h3>
+                            
+                            <h4><a href="article.html">December 31, 2019</a></h4>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="encabezado"><h3>Featured News</h3></div>
+                    <ul>
+                        <li><a href="autoshows.html">Auto Shows</a></li>
+                        <li><a href="buyerguide.html">Buyer's Guide</a></li>
+                        <li><a href="cartech.html">CarTech</a></li>
+                        <li><a href="">Editor Picks</a></li>
+                        <li><a href="">Feature</a></li>
+                        <li><a href="">Most Popular News</a></li>
+                        <li><a href="">Must Ready</a></li>
+                        <li><a href="">News</a></li>
+                        <li><a href="">Random Picks</a></li>
+                        <li><a href="">Top News</a></li>
+                    </ul>
+                </article>
+
+                <article>
+                    <a href=""><img src="img/mercedesnaranja80s.jpg" alt="mercedes80s"/></a>
+                    <a href=""><img src="img/showazulclaro.jpeg" alt="azulclaro"/></a>
+                    <a href=""><img src="img/shownaranja.jpeg" alt="naranja"/></a>
+                    <a href=""><img src="img/raptor.jpeg" alt="raptor"/></a>
+                    <a href=""><img src="img/descapotablerojo.jpeg" alt="descapotable"/></a>
+                    <a href=""><img src="img/mercedes60s.jpg" alt="60s"/></a>
+                </article>
+
+            </section>
+
+
+            <section class="distribucion2">
+                <div class="encabezado"><h3>Car Tech</h3></div>
+
+                <figure>
+                    <img src="img/raptor.jpeg" alt="ferrari" />
+                    <figcaption>
+                        <h3><a href="article.html">Look Back At the Original Jeep Grand Car, Pioneering Luxury Vehicle</a></h3>
+                        <h4><a href="article.html">January 8, 2020</a></h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum amet ut itaque repellat sint sit, quo ea, dignissimos libero 
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, ullam aut maiores fugiat libero praesentium quidem possimus, minus repellat mollitia rem facilis esse enim totam? Numquam pariatur eveniet rem dolores?Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolor ipsa in molestias amet? Totam, voluptates voluptas sunt, id sit ullam, delectus iure ab sint inventore accusamus quisquam ducimus necessitatibus.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. In ad tempore dolor, impedit voluptatum nisi. Inventore beatae ullam exercitationem ad nesciunt non nisi consectetur vitae, dolor qui repellat, illo minima.   
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, et. Enim animi cupiditate officia qui eaque nihil, facere nemo, ratione esse quod temporibus consequatur incidunt nam sunt dolore inventore explicabo.
+                        </p>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt et fugit fuga porro.
+                        </p>
+                        <p>
+                            Pellentesque pretium dui nisl, sed bibendum tortor varius sit amet. Fusce placerat nulla non risus pulvinar pulvinar. Integer ut blandit turpis. Nulla pellentesque lectus a sem dignissim laoreet at eu elit. Sed mattis magna vehicula dictum cursus. Nulla ac imperdiet justo. Donec sollicitudin ultricies molestie.
+
+                            Nulla pellentesque lectus a sem dignissim laoreet at eu elit.
+                            Sed mattis magna vehicula dictum cursus.
+                            Nulla ac imperdiet justo.
+                            Donec sollicitudin ultricies molestie.
+                        </p>
+                        <p>
+                            Maecenas congue ipsum tortor, ut fermentum dui blandit ac. Sed scelerisque nisi eget augue blandit volutpat. Etiam ornare urna at orci ultrices faucibus eget eu nunc. Sed nibh ante, mollis non eros sit amet, posuere blandit orci. In porta vulputate auctor. Etiam elit nunc, hendrerit vel convallis aliquet, iaculis a metus. Cras vitae quam elit. In quis elit et nibh condimentum ultrices at nec elit. Duis pellentesque lorem sed risus pulvinar fringilla. Nullam aliquet mattis interdum.
+                        </p>
+                        <br />
+                        <img src="img/mercedes60s.jpg" />
+                        <br />
+
+                        <p>
+                            Sed mollis sapien nec auctor porttitor. Morbi vestibulum libero id neque commodo lobortis. Duis quis sollicitudin mi, cursus fermentum ipsum. Suspendisse mollis tortor non volutpat pharetra. Curabitur mi felis, scelerisque sed massa ac, ornare tristique leo. Aenean eget est velit. Morbi urna nibh, posuere vel sollicitudin et, vulputate non lectus. Curabitur eu turpis quis arcu consectetur tincidunt. Morbi ante metus, efficitur nec enim non, porttitor porttitor mi. Quisque ac luctus nulla, sed hendrerit nulla. Donec dapibus posuere ligula vel congue. Mauris sed mollis enim, quis cursus ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce condimentum viverra orci nec faucibus. Vivamus malesuada, felis ut auctor tincidunt, dui purus pretium magna, ac hendrerit ex massa at augue.
+                        </p>
+                    </figcaption>
+                </figure>
+                <article>
+                    <figure>
+                        <!-- <img src="img/lamboamarillo.jpeg" alt="lambo"> -->
+                        <div></div>
+                        <figcaption>
+                            <h5><a href="buyerguide.html">&#8592; Previous</a></h5>
+                            <h4><a href="buyerguide.html">2 Best Tips for Your Car Tire Maintenance besfore a Trip</a></h4>
+                        </figcaption>
+                    </figure>
+                    <figure id="next" >
+                        <!-- <img src="img/mercedesnegrocompleto.jpg" alt="mercedesnegro"> -->
+                        <div></div>
+                        <figcaption>
+                            <h5><a href="">&#8594; Next  </a></h5>
+                            <h4><a href="">US Auto Show: The Coolest Car Tech So Far</a></h4>
+                        </figcaption>
+                    </figure>
+                </article>
+                <div>
+                    <figure>
+                        <img src="img/logoperfil.jpeg" alt="perfil"/>
+                    </figure>
+                    <figcaption>
+                        <h3>ThemeGrill Team</h3>
+                        <p>Hey! there. I am a huge WordPress fan and a blogger. I love to hear and write about open source projects.</p>
+                    </figcaption>
+                </div>
+            </section>
+            
+        </main>
+
+                <!-- ---------------------------------------------------------------------------- -->
+                                            <!-- FOOTER -->
+        <!-- ---------------------------------------------------------------------------- -->
+
+        <footer>
+            <div>
+                <h3>Public News</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmodb tempor incididunt ut labore et dolore magna aliqua
+                    <br><br>
+                    Phone : (977) 9876543210
+                    Email : wordpress@demo.themegrill.com
+                    Website : www.themegrill.com
+                </p>
+            </div>
+
+            <div>
+                <h4>Editor Picks</h4>
+                <span></span>
+                <div class="show">
+                    <figure>
+                        <img src="img/shownaranja.jpeg" alt="naranja" />
+                    </figure>
+                    <div class="showtitle">
+                        <h3><a href="">Top Gears Race to the North Pole Great Moments</a></h3>
+                        <br />
+                        <h4><a href="">January 8, 2020</a></h4>
+                    </div>
+                </div>
+                <hr>
+                <div class="show">
+                    <figure>
+                        <img src="img/mercedesnaranja80s.jpg" alt="naranja" />
+                    </figure>
+                    <div class="showtitle">
+                        <h3><a href="article.html">Top Gears Race to the North Pole Great Moments</a></h3>
+                        <br />
+                        <h4><a href="article.html">January 8, 2020</a></h4>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h4>Latest News</h4>
+                <span></span>
+                <div class="show">
+                    <figure>
+                        <img src="img/showazulclaro.jpeg" alt="naranja" />
+                    </figure>
+                    <div class="showtitle">
+                        <h3><a href="article.html">Top Gears Race to the North Pole Great Moments</a></h3>
+                        <br />
+                        <h4><a href="article.html">January 8, 2020</a></h4>
+                    </div>
+                </div>
+                <hr>
+                <div class="show">
+                    <figure>
+                        <img src="img/showazulfuerte.jpeg" alt="naranja" />
+                    </figure>
+                    <div class="showtitle">
+                        <h3><a href="article.html">Top Gears Race to the North Pole Great Moments</a></h3>
+                        <br />
+                        <h4><a href="article.html">January 8, 2020</a></h4>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div id="copiright">
+            <p>Copyright © 2021 ColorMag Pro Public News. All rights reserved.
+                <br><br>
+                Theme: ColorMag Pro by ThemeGrill. Powered by WordPress.</p>
+        </div>
+    </body>
+</html>

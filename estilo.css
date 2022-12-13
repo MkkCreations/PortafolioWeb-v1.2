@@ -1,0 +1,751 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee&family=Cookie&family=Dosis:wght@400;500;700&family=Fredoka:wght@300;400;500;600&family=Lobster&family=Neuton:ital,wght@0,400;0,700;1,400&family=Pacifico&display=swap");
+/* 
+font-family: 'Audiowide', cursive;
+
+font-family: 'Lobster', cursive;
+
+font-family: 'Dosis', sans-serif;
+font-family: 'Fredoka', sans-serif;
+
+font-family: 'Neuton', serif;
+*/
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red; */
+}
+
+html {
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  background: #333;
+  background: linear-gradient(45deg, #ff9528, #3f7ea6);
+  background-repeat: no-repeat;
+}
+
+body main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 75% auto;
+      grid-template-columns: 75% auto;
+  -ms-grid-rows: 15% auto 10%;
+      grid-template-rows: 15% auto 10%;
+  width: 70vw;
+  height: 60vh;
+  background: linear-gradient(45deg, rgba(202, 35, 35, 0.384), rgba(46, 46, 146, 0.733));
+  -webkit-filter: brightness(1) drop-shadow(4vw 4vw 20px #6e2929);
+          filter: brightness(1) drop-shadow(4vw 4vw 20px #6e2929);
+  border-radius: 15px;
+  -webkit-box-shadow: inset -0.5px -0.5px 2px rgba(255, 255, 255, 0.329);
+          box-shadow: inset -0.5px -0.5px 2px rgba(255, 255, 255, 0.329);
+  -webkit-transform: scale(0) rotate(90deg);
+          transform: scale(0) rotate(90deg);
+  -webkit-animation: movee 1s ease;
+          animation: movee 1s ease;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+body main #barra-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /* top: 30px; */
+  left: 15%;
+}
+
+body main #barra-top a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body main #barra-top a h2 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: 'Lobster', cursive;
+  font-size: 1.7em;
+  background: linear-gradient(45deg, rgba(98, 9, 116, 0.781), rgba(11, 72, 80, 0.788));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+body main #barra-top a h2:hover {
+  background: linear-gradient(45deg, rgba(9, 116, 71, 0.781), rgba(66, 11, 80, 0.788));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+body main #tarjeta {
+  -webkit-perspective: 800px;
+          perspective: 800px;
+  width: 70%;
+  min-width: 200px;
+  height: 70%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  justify-items: center;
+}
+
+body main #tarjeta #card {
+  width: 100%;
+  height: 100%;
+  /* background: linear-gradient((45deg), rgba(61, 50, 50, 0.774), rgba(107, 101, 101, 0.425));  */
+  -webkit-box-shadow: inset -0.5px -0.5px 2px rgba(255, 255, 255, 0.329);
+          box-shadow: inset -0.5px -0.5px 2px rgba(255, 255, 255, 0.329);
+  border-radius: 15px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+body main #tarjeta #card .side {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 15px;
+  background: linear-gradient(45deg, rgba(37, 36, 36, 0.575), rgba(109, 105, 105, 0.37));
+}
+
+body main #tarjeta #card .front {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% auto;
+      grid-template-columns: 50% auto;
+  -ms-grid-rows: 30% auto;
+      grid-template-rows: 30% auto;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  justify-items: center;
+}
+
+body main #tarjeta #card .front figure {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  grid-row: span 2;
+  width: 80%;
+  min-width: 80px;
+  height: 0;
+  padding-bottom: 80%;
+  -webkit-transform: rotate(45deg) translate(-20px, 20px);
+          transform: rotate(45deg) translate(-20px, 20px);
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-radius: 10px;
+  -webkit-box-shadow: inset -0.5px -0.5px 3px rgba(255, 255, 255, 0.507);
+          box-shadow: inset -0.5px -0.5px 3px rgba(255, 255, 255, 0.507);
+  -webkit-filter: drop-shadow(0.5px -0.5px 2px rgba(255, 255, 255, 0.315));
+          filter: drop-shadow(0.5px -0.5px 2px rgba(255, 255, 255, 0.315));
+  overflow: hidden;
+  /* img{
+                            width: 100%;
+                            transform: rotate(-45deg) scale(2.4);
+                            filter: brightness(.8) sepia(10%) ;
+                            clip-path: polygon(50% 0%, 90% 50%, 50% 100%, 10% 50%);
+                            
+                        } */
+}
+
+body main #tarjeta #card .front figure::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 180%;
+  top: -50%;
+  left: -50%;
+  z-index: -1;
+  background: url(img/IMG-20220216-WA0037.jpg) 0 0 repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+body main #tarjeta #card .front h2 {
+  width: 80%;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 2em;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 5, 39, 0.678)), to(rgba(11, 19, 36, 0.822)));
+  background: linear-gradient(90deg, rgba(39, 5, 39, 0.678), rgba(11, 19, 36, 0.822));
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+}
+
+body main #tarjeta #card .front p {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: justify;
+  padding: 5px;
+  font-size: 1em;
+  overflow: hidden;
+  margin: 10px;
+  text-shadow: 2px 2px 4px rgba(22, 19, 19, 0.349);
+  font-family: 'Fredoka', sans-serif;
+  overflow-y: scroll;
+  /* border-radius: 10px;
+                        background: linear-gradient((45deg), rgba(134, 55, 55, 0.575), rgba(28, 74, 112, 0.37));
+                        box-shadow: inset -0.5px -.5px 1px rgba(255, 255, 255, 0.315); */
+}
+
+body main #tarjeta #card .front p::-webkit-scrollbar {
+  display: none;
+}
+
+body main #tarjeta #card .back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+
+body main #tarjeta #card .back h2 {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin: 2% auto;
+  font-family: 'Fredoka', sans-serif;
+}
+
+body main #tarjeta #card .back p {
+  display: inline-block;
+  width: 100%;
+  vertical-align: bottom;
+  padding: 20px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  line-height: 22px;
+  font-family: 'Fredoka', sans-serif;
+}
+
+body main #tarjeta #card .back p a {
+  color: #000;
+}
+
+body main #tarjeta:hover #card, body main .back {
+  -webkit-transform: rotateY(-180deg) translateZ(1px);
+          transform: rotateY(-180deg) translateZ(1px);
+}
+
+body main #corner {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1 /4;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 33% 33% 33%;
+      grid-template-rows: 33% 33% 33%;
+}
+
+body main h3 {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-family: 'Audiowide', cursive;
+  /* transform: translate(10%, 190%) rotate(25deg); */
+}
+
+body main #skillsh3 {
+  -webkit-transform: rotate(-44deg);
+          transform: rotate(-44deg);
+  background: -webkit-gradient(linear, left top, right top, from(black), to(rgba(30, 78, 141, 0.589)));
+  background: linear-gradient(90deg, black, rgba(30, 78, 141, 0.589));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+body main #skills {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: linear-gradient(45deg, rgba(61, 50, 50, 0.705), rgba(39, 94, 139, 0.733));
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+  -webkit-box-shadow: inset -2px 2px 3px rgba(247, 248, 247, 0.377);
+          box-shadow: inset -2px 2px 3px rgba(247, 248, 247, 0.377);
+  -webkit-transform: translate(5px, -5px);
+          transform: translate(5px, -5px);
+  -webkit-clip-path: polygon(-4% 0, 100% 0, 100% 98%);
+          clip-path: polygon(-4% 0, 100% 0, 100% 98%);
+  cursor: pointer;
+}
+
+body main #skills:hover {
+  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 66% 34%); */
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  -webkit-animation: skillshover 0.4s alternate;
+          animation: skillshover 0.4s alternate;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes skillshover {
+  from {
+    -webkit-clip-path: polygon(-4% 0, 100% 0, 100% 100%, 90% 74%);
+            clip-path: polygon(-4% 0, 100% 0, 100% 100%, 90% 74%);
+  }
+  to {
+    -webkit-clip-path: polygon(-4% 0, 100% 0, 100% 100%, 66% 34%);
+            clip-path: polygon(-4% 0, 100% 0, 100% 100%, 66% 34%);
+  }
+}
+
+@keyframes skillshover {
+  from {
+    -webkit-clip-path: polygon(-4% 0, 100% 0, 100% 100%, 90% 74%);
+            clip-path: polygon(-4% 0, 100% 0, 100% 100%, 90% 74%);
+  }
+  to {
+    -webkit-clip-path: polygon(-4% 0, 100% 0, 100% 100%, 66% 34%);
+            clip-path: polygon(-4% 0, 100% 0, 100% 100%, 66% 34%);
+  }
+}
+
+@-webkit-keyframes skillsclick {
+  from {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 66% 34%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 66% 34%);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes skillsclick {
+  from {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 66% 34%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 66% 34%);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+body main #skillscontainer {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  display: none;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: scroll;
+  padding-left: 10%;
+}
+
+body main #skillscontainer::-webkit-scrollbar {
+  display: none;
+}
+
+body main .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  min-width: calc(20% + 80px);
+  height: 40%;
+  background-color: #292929b2;
+  margin: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.493);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.493);
+  border: 2px solid rgba(7, 7, 7, 0.12);
+  font-size: 16px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Fredoka', sans-serif;
+}
+
+body main .container img {
+  width: 25%;
+  min-width: 30px;
+}
+
+body main .container .title {
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 2px 3px rgba(37, 37, 37, 0.514);
+}
+
+body main .container .content {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+  font-weight: 200;
+  letter-spacing: 2px;
+  opacity: 0;
+  max-height: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body main .container:hover {
+  height: 60%;
+}
+
+body main .container:hover img {
+  position: absolute;
+  top: -10%;
+}
+
+body main .container:hover .title {
+  height: 25%;
+}
+
+body main .container:hover .content {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 1;
+  max-height: 100%;
+}
+
+body main #projectsh3 {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  width: 100%;
+  text-align: center;
+  -webkit-transform: rotate(44deg);
+          transform: rotate(44deg);
+  background: -webkit-gradient(linear, left top, right top, from(black), to(rgba(30, 78, 141, 0.589)));
+  background: linear-gradient(90deg, black, rgba(30, 78, 141, 0.589));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+body main #projects {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: linear-gradient(45deg, rgba(61, 50, 50, 0.705), rgba(39, 94, 139, 0.733));
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+  -webkit-box-shadow: inset -2px -2px 3px rgba(247, 248, 247, 0.377);
+          box-shadow: inset -2px -2px 3px rgba(247, 248, 247, 0.377);
+  -webkit-transform: translate(5px, 10px);
+          transform: translate(5px, 10px);
+  -webkit-clip-path: polygon(100% 0, 0 100%, 100% 100%);
+          clip-path: polygon(100% 0, 0 100%, 100% 100%);
+  cursor: pointer;
+}
+
+body main #projects:hover {
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  -webkit-animation: projectshover 0.4s alternate;
+          animation: projectshover 0.4s alternate;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+body main #projectscontainer {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  display: none;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: scroll;
+  padding-left: 10%;
+}
+
+body main #projectscontainer a {
+  text-decoration: none;
+}
+
+body main #projectscontainer .container {
+  min-width: calc(40% + 100px);
+  border: none;
+}
+
+body main #projectscontainer .container .content {
+  font-size: 1.4em;
+  font-weight: 500;
+  color: #f8f8f8;
+  text-shadow: 0px 2px 7px #000;
+  border-radius: 6px;
+  background-color: rgba(77, 77, 77, 0.705);
+}
+
+body main #projectscontainer .container:first-of-type {
+  background-image: url(img/capturaprayapi.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body main #projectscontainer .container:nth-of-type(2) {
+  background-image: url(img/capturawebcars.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body main #projectscontainer .container:nth-of-type(3) {
+  background-image: url(img/capturainversiones.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body main #projectscontainer .container p:hover {
+  text-decoration: underline;
+}
+
+body main #projectscontainer::-webkit-scrollbar {
+  display: none;
+}
+
+@-webkit-keyframes projectshover {
+  from {
+    -webkit-clip-path: polygon(95% 18%, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(95% 18%, 100% 0, 100% 100%, 0 100%);
+  }
+  to {
+    -webkit-clip-path: polygon(70% 70%, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(70% 70%, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes projectshover {
+  from {
+    -webkit-clip-path: polygon(95% 18%, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(95% 18%, 100% 0, 100% 100%, 0 100%);
+  }
+  to {
+    -webkit-clip-path: polygon(70% 70%, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(70% 70%, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@-webkit-keyframes projectsclick {
+  from {
+    -webkit-clip-path: polygon(70% 70%, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(70% 70%, 100% 0, 100% 100%, 0 100%);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes projectsclick {
+  from {
+    -webkit-clip-path: polygon(70% 70%, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(70% 70%, 100% 0, 100% 100%, 0 100%);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+body main #social-media {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  width: 100%;
+  position: relative;
+  bottom: 20px;
+  left: 15%;
+}
+
+body main #social-media a {
+  display: inline-block;
+  width: 4%;
+  min-width: 25px;
+  height: 100%;
+}
+
+body main #social-media a figure {
+  width: 100%;
+  height: 100%;
+}
+
+body main #social-media a figure img {
+  width: 100%;
+}
+
+body main #social-media a span {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #020202;
+  position: absolute;
+  font-family: sans-serif;
+  bottom: 0;
+  padding: 5px 7px;
+  z-index: -1;
+  font-size: 14px;
+  border-radius: 2px;
+  background: linear-gradient(45deg, rgba(233, 232, 232, 0.363), rgba(160, 160, 160, 0.37));
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+body main #social-media span::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  position: absolute;
+  bottom: -4px;
+  left: 34px;
+}
+
+body main #social-media a:hover span {
+  bottom: 50px;
+  visibility: visible;
+  opacity: 1;
+}
+
+body main #social-media a:hover {
+  -webkit-filter: drop-shadow(0px 2px 4px #111111) contrast(200%);
+          filter: drop-shadow(0px 2px 4px #111111) contrast(200%);
+}
+
+@-webkit-keyframes containerdisplay {
+  from {
+    opacity: 0;
+    position: relative;
+    left: -100px;
+  }
+  to {
+    opacity: 1;
+    left: 100px;
+  }
+}
+
+@keyframes containerdisplay {
+  from {
+    opacity: 0;
+    position: relative;
+    left: -100px;
+  }
+  to {
+    opacity: 1;
+    left: 100px;
+  }
+}
+
+@-webkit-keyframes movee {
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes movee {
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=estilo.css.map */

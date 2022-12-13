@@ -1,0 +1,330 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Noto+Serif+Display:wght@300&family=PT+Serif+Caption&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(233, 233, 233, 0.384);
+    text-align: center;
+    background: linear-gradient(0deg, rgba(211,215,228,0.013064600840336116) 40%, rgba(121,211,217,0.4500393907563025) 70%, rgba(160, 247, 134, 0.438) 100%);
+    
+    header{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #fff;
+        box-shadow: 0px 2px 4px rgba(128, 128, 128, 0.26);
+        text-align: center;
+        padding: 0.5% 0;
+        position: sticky;
+        top: 0;
+        z-index: 3;
+        align-items: center;
+
+        div{
+            flex: 4;
+            min-width: 250px;
+            display: inline-block;
+            vertical-align: middle;
+
+            h1{
+                font-family: Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+                font-size: 3em;
+                
+
+                a{
+                    text-decoration: none;
+                    color: rgb(41, 41, 41);
+                    text-shadow: 0px 1px 5px  rgb(168, 167, 167);
+                    border-bottom: 1px solid rgba(7, 182, 144, 0.973);
+                    border-left: 5px solid rgba(7, 182, 144, 0.973);
+                    border-bottom-left-radius: 15px;
+                    border-radius: 15px;
+                    border-bottom-right-radius: 5px;
+                }
+            }
+            input{
+                text-align: center;
+                vertical-align: middle;
+                margin: 1%;
+                font-size: 1.4em;
+                width: 20%;
+                min-width: 150px;
+                display: inline-block;
+                padding: 4px;
+                background-color: rgba(247, 247, 247, 0.918);
+                border: 1px solid rgba(255, 255, 255, 0.432);
+                box-shadow: 0px 4px 12px 8px  rgba(212, 211, 211, 0.644);
+                border-radius: 10px;
+            }
+            
+        }
+    }
+
+    section:first-of-type{
+        margin-bottom: 20px;
+        
+        h2{
+            font-family: Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+            font-size: 70px;
+            font-weight: 900;
+            text-align: center;
+            padding: 8vh;
+            position: relative;
+            z-index: 0;
+            color: rgba(0, 0, 0, 0.473);
+            text-shadow: 0px 1px 8px  #706f6f;
+        }
+
+        #cohete{
+            width: 40%;
+            min-width: 400px;
+            transform: rotate(90deg);
+            position: absolute;
+            top: 20vh;
+            right: 100vw;
+            z-index: -2;
+            filter: opacity(0.7);
+        
+            animation: slide 1s linear infinite;
+            animation-play-state: paused;
+            animation-delay: calc(var(--scroll) * -1s);
+            
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+        }
+        @keyframes slide {
+            to {
+              right: 60vw;
+              overflow: hidden;
+            }
+        }
+        
+        #nube{
+            width: 40%;
+            min-width: 250px;
+            position: absolute;
+            overflow: hidden;
+            right: 0%;
+            z-index: 0;
+            animation: slide 1s linear infinite;
+            animation-play-state: paused;
+            animation-delay: calc(var(--scroll) * -1s);
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+        }
+        #nube1{
+            width: 40%;
+            min-width: 250px;
+            position: absolute;
+            overflow: hidden;
+            left: 0px;
+            z-index: 0;
+            animation: slide 1s linear infinite;
+            animation-play-state: paused;
+            animation-delay: calc(var(--scroll) * -1s);
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+        }
+    }
+    #secinfo{
+        width: 75%;
+        margin: auto;
+        padding: 25px;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        color: rgba(34, 33, 33, 0.815);
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.432);
+        box-shadow: 0px 4px 12px 8px  rgba(235, 230, 230, 0.733);
+        background-color: rgba(247, 247, 247, 0.418);
+
+        #infogeo{
+            display: inline-block;
+            width: 80%;
+            background-color: rgba(247, 247, 247, 0.918);
+            border: 1px solid rgba(255, 255, 255, 0.432);
+            box-shadow: 0px 4px 12px 8px  rgba(212, 211, 211, 0.733);
+            border-radius: 10px;
+            text-align: center;
+            font-size: 100%;
+            color: rgb(196, 40, 40);
+        }
+        #box1{
+            width: 80%;
+            border-radius: 10px;
+            text-align: center;
+            margin: 1% auto;
+            font-size: 150%;
+
+            #city{
+                display: inline-block;
+                width: 40%;
+                background-color: rgba(247, 247, 247, 0.918);
+                border: 1px solid rgba(255, 255, 255, 0.432);
+                box-shadow: 0px 4px 12px 8px  rgba(212, 211, 211, 0.733);
+                border-radius: 10px;
+                text-align: center;
+            }
+            #time{
+                display: inline-block;
+                width: 40%;
+                background-color: rgba(247, 247, 247, 0.918);
+                border: 1px solid rgba(255, 255, 255, 0.432);
+                box-shadow: 0px 4px 12px 8px  rgba(212, 211, 211, 0.733);
+                border-radius: 10px;
+                text-align: center;
+            }
+        }
+        #box2{
+            width: 50%;
+            background-color: rgba(247, 247, 247, 0.918);
+            border: 1px solid rgba(255, 255, 255, 0.432);
+            box-shadow: 0px 4px 12px 8px  rgba(212, 211, 211, 0.733);
+            border-radius: 10px;
+            text-align: center;
+            margin: 2% auto;
+            font-size: 220%;
+        }
+        #box3{
+            width: 95%;
+            border-radius: 10px;
+            text-align: center;
+            margin: 2% auto;
+            font-size: 320%;
+            font-weight: 900;
+            #puntos{
+                display: inline-block;
+                vertical-align: middle;
+            }
+            #box31,#box32,#box33,#box34{
+                display: inline-block;
+                width: 16%;
+                background-color: rgba(14, 13, 13, 0.918);
+                border: 3px groove rgba(48, 47, 47, 0.733);
+                box-shadow: 0px 4px 12px 8px  rgba(212, 211, 211, 0.733);
+                border-radius: 10px;
+                text-align: center;
+                vertical-align: middle;
+                justify-items: center;
+                color: #fff;
+            }
+        }
+        #list{
+            width: 70%;
+            border-radius: 10px;
+            text-align: center;
+            margin: 2% auto;
+
+            li{
+                display: inline-flex;
+                list-style: none;
+                width: 90%;
+                background-color: rgba(247, 247, 247, 0.918);
+                border: 1px solid rgba(255, 255, 255, 0.432);
+                box-shadow: 0px 4px 12px 8px  rgba(212, 211, 211, 0.733);
+                border-radius: 10px;
+                text-align: center;
+                margin: 1% auto;
+                justify-content: space-between;
+                align-items: center;
+                div{
+                    width: 45%;
+                    border-radius: 10px;
+                    text-align: center;
+                    font-size: 150%;
+                }
+            }
+        }
+    }
+    #secamazon{
+        width: 80%;
+        display: inline-flex;
+        flex-wrap: wrap;
+        margin: 2% auto;
+        text-align: center;
+        justify-content: space-around;
+
+        h2{
+            display: inline-block;
+            width: 100%;
+            font-family: Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+            font-size: 40px;
+            font-weight: 900;
+            text-align: center;
+            padding: 8vh;
+            position: relative;
+            z-index: 0;
+            color: rgba(0, 0, 0, 0.473);
+            text-shadow: 0px 1px 8px  #706f6f;
+        }
+        div{
+            flex: 1;
+            display: inline-flex;
+            flex-wrap: wrap;
+            width: 10%;
+            min-width: 140px;
+            max-width: 300px;
+            text-align: center;
+            margin: 1%;
+            padding: 20px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.432);
+            box-shadow: 0px 4px 12px 8px  rgba(235, 230, 230, 0.733);
+            background-color: rgba(247, 247, 247, 0.418);
+            align-items: end;
+
+            div{
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+                img{
+                    width: 100%;
+                    border-radius: 10px;
+                    box-shadow: 0px 4px 12px 8px  rgb(173, 172, 172);
+                }
+            }
+            
+            h3{
+                font-family: Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+                color: gray;
+                width: 100%;
+                margin: 20px auto 2px;
+                border: 3px solid rgba(255, 255, 255, 0.432);
+                box-shadow: 0px 4px 12px 8px  rgba(231, 230, 230, 0.733);
+                background-color: rgb(247, 247, 247);
+                border-radius: 10px;
+            }
+            a{
+                
+                display: inline-block;
+                width: 60%;
+                text-decoration: none;
+                background-color: rgb(2, 80, 168);
+                border-radius: 6px;
+                margin: 5px auto;
+                padding: 10px;
+                color: lightcyan;
+            }
+        }
+    }
+    footer{
+        
+        p{
+            width: 100%;
+            display: inline-block;
+            text-align: center;
+            margin: 2% 0;
+            margin-top: 100px;
+            color: rgb(167, 167, 167);
+        }
+    }
+        
+    
+}

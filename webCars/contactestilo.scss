@@ -1,0 +1,461 @@
+@font-face {
+    font-family: "font1";
+    src: "fonts/play";
+  }
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+@keyframes run {
+    0%{left: -100%;}
+    100%{left: 0%;}
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+span:first-child{
+    position: fixed;
+    top: 14%;
+    right: 0%;
+    z-index: 6;
+    
+    div{
+        background-color: #fff;
+        padding: 8px;
+        border: solid 1px #ecebeb;
+        margin-bottom: 10px;
+        a{
+            color: #000;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+    }
+    
+}
+/* AQUI EMPIEZA EL HEADER */
+/* ------------------------------------------------------ */
+header{
+    position: sticky;
+    top: -180px;
+    z-index: 4;
+    background-color: #764dc5;
+    color: #fff;
+    div{
+        display: block;
+        width: 90%;
+        margin: auto;
+        background-color: #764dc5;
+
+        h1{
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 300;
+            font-size: 110px;
+        }
+    }
+    #menu{
+        display: none;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        margin: 1%;
+        margin-left: 4%;
+        vertical-align: middle;
+        z-index: 2;
+    }
+    #menu span{
+        width: 100%;
+        height: 4px;
+        border-radius: 4px;
+        display: block;
+        position: absolute;
+        background: #fff;
+        transition: all 0.25s ease;
+        transform-origin : 0px 100%;
+    }
+    #menu span:nth-child(2){
+        top: calc(50% - 2%);
+    }
+    #menu span:nth-child(3){
+        bottom: 0;
+    }
+
+    div:first-of-type{
+        width: 80%;
+        margin: auto;
+        padding: 1%;
+        p{
+            display: inline-block;
+        }
+    }
+
+    div:last-of-type{
+        width: 100%; 
+        border-bottom: 4px solid #8258d4;
+        border-top: 1px solid #5d2bc049;
+    }
+    nav{
+        display: block;
+        width: 80%;
+        margin: auto;
+        background-color: #764dc5;
+       
+
+        ul{
+            display: inline-block;
+            width: 80%;
+            text-align: left;
+            list-style: none;
+            li{
+                display: inline-block;
+                font-family: sans-serif;
+                font-weight: 500;
+                font-size: 14px;
+                padding: 1.4% 1%;
+            
+                a{
+                    padding: 14px 0%;
+                }
+                
+            }
+            .selected{
+                background-color: #8258d4;
+            }
+            li:hover{
+                position: relative;
+                top: 15px;
+                transform: scale(1.2);
+                background-color: unset;
+                background-color: #8258d4;
+                transition: 0.8s;
+            }
+        }
+        figure{
+            width: 20px;
+            display: inline-block;
+            /* margin-left: 8%; */
+            position: relative;
+            right: -16%;
+            cursor: pointer;
+
+            img{
+                width: 100%;
+                vertical-align: middle;
+            }
+            img:hover{
+                transform: scale(1.4);
+            }
+        }
+        span{
+            display: none;
+            text-align: center;
+            border-radius: 6px;
+            padding: 18px;
+            input{
+                display: inline-block;
+                width: 120px;
+                padding: 12px;
+                background-color: #bca8e6be;
+                border: none;
+                border-radius: 4px;
+            }
+            button{
+                padding: 10px;
+                display: inline-block;
+                width: 70px;
+                background-color: #9361f8;
+                border: none;
+                border-radius: 4px;
+            }
+        }
+        
+        
+    }
+}
+/* ------------------------------------------------------ */
+/* AQUI ACABA EL HEADER */
+
+
+
+/* AQUI EMPIEZA EL MAIN */
+/* ------------------------------------------------------ */
+main{
+    width: 80%;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap-reverse;
+
+/*-- ----------------------------------------------------------------------------
+                                -- SECTION --
+-- ---------------------------------------------------------------------------- */
+   
+    a{
+        color: black;
+    }
+    
+
+    margin: 4% auto;
+    
+    .encabezado{
+            border-bottom:1px solid #49B9B9;
+            margin-bottom: 35px;
+
+            h3{
+                width: 30%;
+                text-align: center;
+                padding: 7px 2px;
+                color: #fff;
+                font-family: 'Play',sans-serif;
+                font-size: 14px;
+                font-weight: 300;
+                background-color: #49B9B9;
+            }
+        }
+        
+    
+
+
+        .show{
+        margin-bottom: 12px;
+        figure{
+            width: 120px;
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 8px;
+            margin-bottom: -4px;
+            img{
+                width: 100%;
+            }
+        }
+        .showtitle{
+            width: 55%;
+            display: inline-block;
+
+            h3{
+                font-size: 14px;
+                font-family: 'Play';
+                margin-bottom: 8px;
+            }
+            br{
+                width: 3px;
+            }
+            h4{
+                a{
+                    font-size: 14px;
+                    color: rgb(136, 136, 136);
+                    font-family: gill sans;
+                    font-weight: 200;
+                    
+                }
+            }
+        }
+    }
+    .distribucion1{
+        flex: 2;
+        margin-right: 40px;
+        min-width: 330px;
+
+       form{
+           label{
+               width: 80%;
+           }
+           input{
+                width: 80%;
+                border: #ecebeb 1px solid;
+                background-color: #f5f5f5;
+                border-radius: 4px;
+                height: 22px;
+           }
+           textarea{
+                width: 80%;
+                border: #ecebeb 1px solid;
+                background-color: #f5f5f5;
+                border-radius: 4px;
+           }
+           button{
+                border: 1px solid #cccccc;
+                background-color: #f5f5f5;
+                padding: 4px;
+                border-radius: 4px;
+           }
+           h3{
+               font-weight: 100;
+               text-align: center;
+           }
+       }
+    }
+    .distribucion2{
+        flex: 1;
+        min-width: 330px;
+    }
+}
+   
+
+/* AQUI EMPIEZA EL FOOTER */
+/* ------------------------------------------------------ */
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 50px 10%;
+    background-color: #211b42;
+
+    div{
+        flex: 1;
+        min-width: 200px;
+    }
+
+    div:first-child{
+        margin-right: 30px;
+        h3{
+            color: #fff;
+            font-size: 4.5vw;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+        p{
+            color: #a3a3a3;
+            font-family: 'Play';
+            font-weight: 100;
+            font-size: 15px;
+        }
+    }
+    div:nth-child(2){
+        margin-right: 16px;
+        h4:first-child{
+            font-family: 'Play';
+            color: #fff;
+            font-size: 18px;
+            font-weight: 100;
+        }
+        span{
+            width: 25px;
+            display: block;
+            border: #764dc5 solid 1px;
+            margin: 6px 0 20px 0;
+
+        }
+        hr{
+            width: 90%;
+            border: solid 1px #a3a3a3;
+        }
+        .show{
+            margin-bottom: 12px;
+            margin-top: 12px;
+            figure{
+                width: 40%;
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 8px;
+                img{
+                    width: 100%;
+                }
+            }
+            .showtitle{
+                width: 52%;
+                display: inline-block;
+    
+                h3{
+                    a{
+                        color: #fff;
+                        font-size: 14px;
+                        font-family: 'Play';  
+                    }
+
+                }
+                h4{
+                    a{
+                        font-size: 14px;
+                        color: #fff;
+                        font-family: gill sans;
+                        font-weight: 200;
+                        
+                    }
+                    a:hover{
+                        transition: 0.8s;
+                        color: slateblue;
+                    }
+                }
+            }
+        }
+    }
+
+    
+    div:nth-child(3){
+
+        h4:first-child{
+            font-family: 'Play';
+            color: #fff;
+            font-size: 18px;
+            font-weight: 100;
+        }
+        span{
+            width: 25px;
+            display: block;
+            border: #764dc5 solid 1px;
+            margin: 6px 0 20px 0;
+
+        }
+        hr{
+            width: 90%;
+            border: solid 1px #a3a3a3;
+        }
+        .show{
+            margin-bottom: 12px;
+            margin-top: 12px;
+            figure{
+                width: 40%;
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 8px;
+                img{
+                    width: 100%;
+                }
+            }
+            .showtitle{
+                width: 52%;
+                display: inline-block;
+    
+                h3{
+                    a{
+                        color: #fff;
+                        font-size: 14px;
+                        font-family: 'Play';  
+                    }
+
+                }
+                h4{
+                    a{
+                        font-size: 14px;
+                        color: #fff;
+                        font-family: gill sans;
+                        font-weight: 200;
+                        
+                    }
+                    a:hover{
+                        transition: 0.8s;
+                        color: slateblue;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#copiright{
+    background-color: rgba(22, 22, 22, 0.89);
+    padding: 40px;
+    text-align: center;
+    color: #fff;
+
+}
+
