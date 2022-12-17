@@ -63,9 +63,13 @@
                 }
             }
             @media screen and (max-width: 450px){
+                html {
+                    overflow: scroll;
+                }
                 body main{
                     height: 80vh;
                     width: 90vw;
+                    min-height: 700px;
                     grid-template-columns: 100% 0;
                     grid-template-rows: 15% auto 10% 15%;
                 } 
